@@ -2,6 +2,7 @@ package dns
 
 import (
 	"fmt"
+	"github.com/go-acme/lego/v4/providers/dns/inwxmulti"
 
 	"github.com/go-acme/lego/v4/challenge"
 	"github.com/go-acme/lego/v4/challenge/dns01"
@@ -172,6 +173,8 @@ func NewDNSChallengeProviderByName(name string) (challenge.Provider, error) {
 		return infomaniak.NewDNSProvider()
 	case "inwx":
 		return inwx.NewDNSProvider()
+	case "inwx-multi":
+		return inwxmulti.NewDNSProvider()
 	case "joker":
 		return joker.NewDNSProvider()
 	case "lightsail":

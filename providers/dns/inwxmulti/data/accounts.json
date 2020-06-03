@@ -1,0 +1,6 @@
+{
+  "domainConfig": {
+    "data/account1.json": ["example.org"],
+    "data/account2.json": ["example.com", "test.example.com"]
+  }
+}

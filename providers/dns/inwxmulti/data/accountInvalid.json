@@ -1,0 +1,7 @@
+{
+  "username": {
+    "key": "invalid"
+  },
+  "password": "password2",
+  "sharedSecret": "1234ABCD"
+}
